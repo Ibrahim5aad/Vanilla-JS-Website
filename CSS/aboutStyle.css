@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.right{
+    width: 60%;
+    background-color: rgba(53,49,49,0.25);
+    padding: 20px 10px;
+    box-shadow: rgb(66, 66, 66) 0px 0px 12px 1px;
+    border-radius: 20px;
+
+}
+
+.left {
+
+    height: 500px;
+    width: 300px;
+    background-color: rgba(53,49,49,0.25);
+    padding: 20px 10px;
+    box-shadow: rgb(66, 66, 66) 0px 0px 12px 1px;
+    border-radius: 20px;
+    line-height: 20px;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+	margin-top: 50px;
+}
+.info h3 {
+	border-radius: 5px;
+	color: #494949;
+	font-family: sans-serif;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 10px 10px 10px;
+    background-color: rgb(62,132,179,0.5);
+}
+
+.name {
+	font-size: 50px;
+	color: #5b584c;
+	font-family: monospace, sans-serif;
+	padding: 50px 50px 20px 20px;
+
+}
+
+.item div:first-child {
+	display: flex;
+}
+
+.item {
+    margin-top: 5px;
+    color: #353131;
+    
+}
+.item div i {
+	font-size: 18px;
+	color: #291818;
+	width: 30px;
+	margin-top: 3px;
+}
+
+.item div a{
+	font-family: "Lucida Sans Unicode";
+    text-decoration: none;
+    
+}
+.item div a:link {
+  color: rgb(41, 41, 41);
+}
+
+.item div div b{
+    font-family: "Lucida Sans Unicode";
+}
+
+.item div a:visited {
+  color: #353131;
+}
+
+section header {
+
+	margin-left: 20px;
+	color: #494949;
+	font-family: Geneva, sans-serif;
+	display: inline-block;
+}
+
+.entry {
+    display: flex;
+    line-height: 2;
+
+
+}
+.entry div:first-child h5 {
+	margin-left: 20px;
+    color: rgb(62,132,179,0.7);
+    border: 1px solid;
+    padding: 0px 2px;
+    height: 17px;
+    align-items: center;
+    display: flex;
+    
+}
+
+.entry div h3 {
+	margin-left: 40px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #423321;
+}
+
+.entry div h3+h4 {
+	margin-top: -20px;
+    margin-left: 40px;
+    color: rgb(62,132,179,0.7);
+
+}
+
+.entry div p {
+
+    margin-left: 40px;
+    margin-top: -10px;
+    font-family: sans-serif;
+}
+section {
+	margin-top: 40px;
+}
+
+hr {
+    width: 80%;
+    display: inline-block;
+    height: 4px;
+    border: 0;
+    border-top: 1px solid #444239;
+    margin-left: 10px;
+    margin-bottom: 1px;
+    padding: 0px;
+    margin-right: 20px;
+}
+section>div:first-child {
+	display: flex;
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+
+
+.entrysoftware{
+	margin-top: 5px;
+	margin-left: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.entrylang {
+	display: flex;
+}
+.entrylang div{
+	margin-top: 20px;
+	margin-left: 25px;
+	display: block;
+}
+.entrysoftware p {
+	display: inline;
+	margin: 10px 16px 10px 0px;
+	padding-right: 3px;
+	padding-left: 3px; 
+	padding-top: 3px;
+	background-color: rgb(62,132,179,0.5);
+	border-radius: 5px;
+	font-family: sans-serif;
+	color: #ddd;
+}
+
+br+sa{
+	font-size: 12px;
+	color:#63c0c6;
+	font-style: italic;
+}
+.entrylang sa:first-child {
+	
+	margin: 0px 0px 0px 0px;
+	 color:#444239;
+	font-family: sans-serif;
+}
+
+.moocs {
+	margin: 29px;
+    color: #423321;
+    font-family: sans-serif;
+    font-size: 20;
+}

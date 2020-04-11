@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>My Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+      <link rel="stylesheet" type="text/css" href="../CSS/galleryStyle.css">
+      <script src="../JS/main.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div>
+      <p class="logged"><span><i class="fa fa-user" aria-hidden="true"></i>: <span id="logged-text"> </span></span><span class="logged-name"></span></p>
+      <ul class="navbar navbar2" >
+          <li><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+          <li><a class="selected" href="gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+          <li><a href="about.html"><i class="fa fa-id-card-o" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+          <li><a href="registeration.html"><i class="fa fa-user-plus" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+          <li><a href="game.html"><i class="fa fa-gamepad" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+      </ul>
+    </div>
+    <div class="container">
+    <div class="frame">
+      <div class="preview">
+        <img class="imgPreview" src="../utilities/img/01.jpg" alt="">
+      </div>
+      <div class="slider">
+      <img class="thumbnail selected" src="../utilities/img/01.jpg">
+      <img class="thumbnail" src="../utilities/img/02.jpg">
+      <img class="thumbnail" src="../utilities/img/03.jpg">
+      <img class="thumbnail" src="../utilities/img/04.jpg">
+      <img class="thumbnail" src="../utilities/img/05.jpg">
+      <img class="thumbnail" src="../utilities/img/06.jpg">
+      <img class="thumbnail" src="../utilities/img/07.jpg">
+      <img class="thumbnail" src="../utilities/img/08.jpg">
+      </div>
+    </div>
+      </div>
+    <script type="text/javascript"> sliderFunctionality() </script>
+  </body>
+  </html>

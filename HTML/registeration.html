@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registeration</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/galleryStyle.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/registerStyle.css">
+    <script src="../JS/main.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+    <div>
+		<p class="logged"><span><i class="fa fa-user" aria-hidden="true"></i>: <span id="logged-text"> </span></span><span class="logged-name"></span></p>
+		<ul class="navbar navbar2" >
+            <li><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+            <li><a href="gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+            <li><a href="about.html"><i class="fa fa-id-card-o" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+            <li><a class="selected" href="registeration.html"><i class="fa fa-user-plus" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+            <li><a href="game.html"><i class="fa fa-gamepad" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+    </ul>
+    </div>
+    <div class="form-container">
+    	<form action="" method=get width=400>
+            <h1 id="header" >Registeration:</h1>
+    		<fieldset name=accinfo>
+    			<legend> Account Information:</legend>
+    			Username: <input type="Text" name="username" placeholder=" Enter a username" class="txtbox" required pattern="^[a-zA-Z0-9]{5,8}$" oninvalid="setCustomValidity('Please, enter 5:8 char username')" oninput="setCustomValidity('')"><br>
+    			Email: <input type="email" name="email" placeholder=" Enter your email" class="txtbox" pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]{2,61}[a-zA-Z0-9]\.[a-zA-Z0-9]{1,61}$" required> <br>
+    			Password: <input type="password" id="password" placeholder=" Enter a password" class="txtbox" required pattern="^[a-zA-Z0-9]{7,}$" oninvalid="setCustomValidity('Minimum password 7 char legnth')" oninput="setCustomValidity('')"><br>
+    			Confirm Password: <input type="password" id="confirm-password" placeholder=" Confirm the password" class="txtbox" required><br>
+    		</fieldset>
+    		<fieldset name=pesonalinfo>
+    			<legend >Personal Information:</legend>
+    			First Name:    <input type="Text" name="fstname" placeholder=" Enter your first name" class="txtbox" required pattern="^[a-zA-Z]{1,}$" oninvalid="setCustomValidity('first name must be letters only')" oninput="setCustomValidity('')"><br>
+    			Last Name:    <input type="Text" name="lstname" class="txtbox" placeholder=" Enter your last name" required pattern="^[a-zA-Z]{1,}$" oninvalid="setCustomValidity('first name must be letters only')" oninput="setCustomValidity('')"><br>
+    			Date Of Birth: <input type="date" name="bod" class="txtbox" required><br>
+    			Phone Number: <input id="phone"type="text" name="phone" placeholder=" Enter your phone number" class="txtbox" required pattern="^0[1]{1}\d{9}$" oninvalid="setCustomValidity('Please, enter a phone number in the format: 01xxxxxxxx')" oninput="setCustomValidity('')"><br>
+    			Department:    <input type="Text" class="txtbox" placeholder="Enter your department" required><br>
+    		</fieldset>
+    		<div class="btn-container">
+    			<br>
+    			<button type="submit" class="btn">Register</button>
+    			<button type="reset" class="btn">Reset</button>
+    		</div>
+        </form>
+	</div>
+	<script type="text/javascript">
+        passwordConfirmation()
+	</script>
+</body>
+</html>

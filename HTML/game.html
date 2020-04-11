@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Game</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/galleryStyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/gameStyle.css">    <script src="../JS/game.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+    <div>
+        <p class="logged"><span><i class="fa fa-user" aria-hidden="true"></i> <span id="logged-text">: </span></span><span class="logged-name"></span></p>
+        <ul class="navbar navbar2" >
+            <li><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+            <li><a href="gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+            <li><a href="about.html"><i class="fa fa-id-card-o" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+            <li><a href="registeration.html"><i class="fa fa-user-plus" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+            <li><a class="selected" href="game.html"><i class="fa fa-gamepad" aria-hidden="true"></i>  <span class="iconTexts"></span></a></li>
+    </ul>
+    </div>
+    <div id="body">
+        <div id="header">
+            <div class="score">Score: <span id="score">00</span></div>
+            <div class="health">Health: <span id="health">100</span></div>
+            <div class="timer">Time: <span id="timer">60</span></div>
+        </div>
+        <div id="container">
+
+            <canvas id="canvas" width="1000" height="500"></canvas>
+            <div id="instructions">
+                <h4>-Instructions:</h4>
+                <p><b>1-</b> The objective is to collect the required white balls in <b>60 seconds</b> and before your health degrades to zero. <br>
+                   <b>2-</b> Beware of the dark balls as they get agitated when you encounter them and your health will degrade and their hostility increase. <br>
+                   <b>3-</b> There are three levels of difficulty each you are assigned to achieve a required score to win: <br>
+                          &nbsp &nbsp &nbsp -<b><i>Easy</i></b> --> score = 15 balls <br>
+                          &nbsp &nbsp &nbsp -<b><i>Medium</i></b> --> score = 25 balls <br>
+                          &nbsp &nbsp &nbsp -<b><i>Hard</i></b> --> score = 30 balls <br> </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
