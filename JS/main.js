@@ -199,12 +199,12 @@ function clockFloating(){
 function welcomeFunctionality(){
 	var name = window.prompt('Please, enter your name: ')
 	var text = document.querySelector('.welcome-container')
+	 if(name == ''){
+		name = "Anonymous"
+	}
 	if(name){
 		text.innerHTML = `Welcome, ${name}!`
 		window.localStorage.setItem('name', name)
-	}
-	else if(name == ' '){
-		text.innerHTML = 'Welcome!'
 	}
 	else{text.innerHTML = 'Welcome!'}
 
