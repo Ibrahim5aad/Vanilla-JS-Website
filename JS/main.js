@@ -197,7 +197,7 @@ function clockFloating(){
 	}, true);
 }
 function welcomeFunctionality(){
-	var name = window.prompt('Please, enter your name: ')
+	var name = "" //window.prompt('Please, enter your name: ')
 	var text = document.querySelector('.welcome-container')
 	if(name){
 		text.innerHTML = `Welcome, ${name}!`
